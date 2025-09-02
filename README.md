@@ -63,7 +63,7 @@ Dataset: Kaggle (Women’s Clothing E-commerce Sales)
 
 📌 How to Use
 
-Clone the repo:
+Clone the repo: https://github.com/ishan-1205/Ecommerce_Sales_Project
 
 git clone https://github.com/yourusername/sql-ecommerce-sales](https://github.com/ishan-1205/Ecommerce_Sales_Project.git
 
