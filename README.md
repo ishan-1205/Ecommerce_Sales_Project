@@ -65,7 +65,7 @@ Dataset: Kaggle (Women’s Clothing E-commerce Sales)
 
 Clone the repo:
 
-git clone https://github.com/yourusername/sql-ecommerce-sales.git
+git clone https://github.com/yourusername/sql-ecommerce-sales](https://github.com/ishan-1205/Ecommerce_Sales_Project.git
 
 
 Import the dataset into your SQL Server.
