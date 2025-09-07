@@ -20,10 +20,13 @@ order by Total_Revenue desc
 
 
  --Which Color Generated the Highest Revenue
-select top 1 color,sum(revenue) as Total_Revenue
+select color , sum(revenue) as total_revenue
 from [dbo].[women_clothing_ecommerce_sales$]
 group by color
-order by Total_Revenue desc
+having sum(revenue)= (select max(total_rev) from
+(select  color,sum(revenue)as total_rev
+from [dbo].[women_clothing_ecommerce_sales$]
+group by color)as t)
 
 --Total Monthly Revenue Trend
 select datename (month,order_date)as month, sum(revenue) as monthly_revenue
@@ -78,5 +81,6 @@ from [dbo].[women_clothing_ecommerce_sales$]
 group by order_id
 having sum(revenue)>1000
 order by total_revenue asc
+
 
 
